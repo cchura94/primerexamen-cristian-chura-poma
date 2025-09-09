@@ -1,7 +1,8 @@
 :root {
     --blue: #1d4ed8;
-    --frame: #cfcfcf;
+    --red: #dc2626;
     --gray: #e5e7eb;
+    --frame: #cfcfcf;
     --text: #111;
 }
 
@@ -68,16 +69,23 @@ body {
     color: inherit;
 }
 
+.hero {
+    border: 2px solid var(--frame);
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+    background: var(--gray);
+}
+
 .lista-productos {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem;
     display: grid;
     gap: .75rem;
     grid-template-columns: 1fr;
 }
 
-.card,
 article {
     border: 2px solid var(--frame);
     padding: .6rem;
@@ -100,4 +108,28 @@ article {
     border-top: 2px solid var(--frame);
     text-align: center;
     padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        display: none;
+    }
+
+    header {
+        background: var(--red);
+    }
+
+    .footer {
+        color: var(--blue);
+    }
+
+    .lista-productos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) {
+    .lista-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
