@@ -1,82 +1,82 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>MANACO - Calzado que impulsa tu paso</title>
-    <meta name="description"
-        content="Landing page de MANACO: calzado que impulsa tu paso. Explora nuestros productos y compra en línea con accesibilidad y diseño responsive." />
-
-    <meta property="og:title" content="MANACO - Calzado que impulsa tu paso" />
-    <meta property="og:description"
-        content="Landing page de MANACO: calzado que impulsa tu paso. Explora nuestros productos y compra en línea con accesibilidad y diseño responsive." />
-    <meta property="og:image" content="https://via.placeholder.com/600x315.png?text=MANACO" />
-    <meta property="og:type" content="website" />
-
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MANACO - Calzado que impulsa tu paso</title>
+  <meta name="description" content="Landing page de MANACO: calzado que impulsa tu paso. Explora nuestros productos y compra en línea con accesibilidad y diseño responsive." />
+  <meta property="og:title" content="MANACO - Calzado que impulsa tu paso" />
+  <meta property="og:description" content="Landing page de MANACO: calzado que impulsa tu paso. Explora nuestros productos y compra en línea con accesibilidad y diseño responsive." />
+  <meta property="og:image" content="https://via.placeholder.com/600x315.png?text=MANACO" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <header>
-        <nav aria-label="Principal" class="nav">
-            <h1 class="brand">MANACO</h1>
+  <header>
+    <nav aria-label="Principal" class="nav">
+      <h1 class="brand">MANACO</h1>
 
-            <ul class="menu">
-                <li><a href="#" aria-current="page">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+      <ul class="menu" id="menu">
+        <li><a href="#" aria-current="page">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
 
-            <button class="hamburger" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false"></button>
-        </nav>
-    </header>
+      <button class="hamburger" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-    <main id="contenido" class="main">
-        <section class="hero" aria-labelledby="hero-title">
-            <h2 id="hero-title">Calzado que impulsa tu paso</h2>
-        </section>
+  <main id="contenido" class="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Calzado que impulsa tu paso</h2>
+    </section>
 
-        <section class="productos" aria-labelledby="productos-title">
-            <h2 id="productos-title">Productos</h2>
+    <section class="productos" aria-labelledby="productos-title">
+      <h2 id="productos-title">Productos</h2>
 
-            <ul class="lista-productos">
-                <li>
-                    <article aria-labelledby="p1-title">
-                        <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 1"></figure>
-                        <h3 id="p1-title">Producto 1</h3>
-                        <p class="precio">$00.00</p>
-                        <button type="button">Comprar</button>
-                    </article>
-                </li>
+      <ul class="lista-productos">
+        <li>
+          <article aria-labelledby="p1-title">
+            <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 1"></figure>
+            <div class="info">
+              <h3 id="p1-title">Producto 1</h3>
+              <p class="precio">$00.00</p>
+              <button type="button" class="btn">Comprar</button>
+            </div>
+          </article>
+        </li>
 
-                <li>
-                    <article aria-labelledby="p2-title">
-                        <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 2"></figure>
-                        <h3 id="p2-title">Producto 2</h3>
-                        <p class="precio">$00.00</p>
-                        <button type="button">Comprar</button>
-                    </article>
-                </li>
+        <li>
+          <article aria-labelledby="p2-title">
+            <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 2"></figure>
+            <div class="info">
+              <h3 id="p2-title">Producto 2</h3>
+              <p class="precio">$00.00</p>
+              <button type="button" class="btn">Comprar</button>
+            </div>
+          </article>
+        </li>
 
-                <li>
-                    <article aria-labelledby="p3-title">
-                        <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 3"></figure>
-                        <h3 id="p3-title">Producto 3</h3>
-                        <p class="precio">$00.00</p>
-                        <button type="button">Comprar</button>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <li>
+          <article aria-labelledby="p3-title">
+            <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 3"></figure>
+            <div class="info">
+              <h3 id="p3-title">Producto 3</h3>
+              <p class="precio">$00.00</p>
+              <button type="button" class="btn">Comprar</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-    <footer class="footer">
-        <p>Copyright 2025 MANACO</p>
-    </footer>
+  <footer class="footer">
+    <p>Copyright 2025 MANACO</p>
+  </footer>
 </body>
-
 </html>
