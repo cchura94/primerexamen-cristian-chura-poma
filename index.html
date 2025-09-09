@@ -4,48 +4,62 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MANACO</title>
+    <!-- Enlaza el CSS (crea styles.css tal como aparece abajo) -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- Enlace para saltar al contenido -->
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
     <header>
-      <nav aria-label="Navegación principal">
-        <h1>MANACO</h1>
-        <ul>
-          <li><a href="#">Inicio</a></li>
+      <nav aria-label="Principal" class="nav">
+        <h1 class="brand">MANACO</h1>
+
+        <ul class="menu">
+          <li><a href="#" aria-current="page">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+
+        <!-- Botón hamburguesa decorativo (accesible) -->
+        <button class="hamburger" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false"></button>
       </nav>
     </header>
 
-    <main>
-      <section aria-labelledby="hero-title">
+    <main id="contenido" class="main">
+      <!-- Banner/hero (se podrá ocultar en mobile más adelante) -->
+      <section class="hero" aria-labelledby="hero-title">
         <h2 id="hero-title">Calzado que impulsa tu paso</h2>
       </section>
 
-      <section aria-labelledby="productos-title">
+      <section class="productos" aria-labelledby="productos-title">
         <h2 id="productos-title">Productos</h2>
 
-        <ul>
+        <ul class="lista-productos">
           <li>
             <article aria-labelledby="p1-title">
+              <!-- Figura simulada con role + aria-label (no usar <img>) -->
+              <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 1"></figure>
               <h3 id="p1-title">Producto 1</h3>
-              <p>$00.00</p>
+              <p class="precio">$00.00</p>
               <button type="button">Comprar</button>
             </article>
           </li>
 
           <li>
             <article aria-labelledby="p2-title">
+              <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 2"></figure>
               <h3 id="p2-title">Producto 2</h3>
-              <p>$00.00</p>
+              <p class="precio">$00.00</p>
               <button type="button">Comprar</button>
             </article>
           </li>
 
           <li>
             <article aria-labelledby="p3-title">
+              <figure class="thumb" role="img" aria-label="Imagen ilustrativa del Producto 3"></figure>
               <h3 id="p3-title">Producto 3</h3>
-              <p>$00.00</p>
+              <p class="precio">$00.00</p>
               <button type="button">Comprar</button>
             </article>
           </li>
@@ -53,7 +67,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Copyright 2025 MANACO</p>
     </footer>
   </body>

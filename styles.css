@@ -1,0 +1,103 @@
+:root {
+    --blue: #1d4ed8;
+    --frame: #cfcfcf;
+    --gray: #e5e7eb;
+    --text: #111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    border: 3px solid var(--frame);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #fff;
+    padding: .5rem .9rem;
+    border: 2px dashed var(--blue);
+    border-radius: .4rem;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+:focus-visible {
+    outline: 3px dashed var(--blue);
+    outline-offset: 3px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .75rem 1rem;
+}
+
+.brand {
+    margin: 0;
+    font-weight: 700;
+}
+
+.menu {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lista-productos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: 1fr;
+}
+
+.card,
+article {
+    border: 2px solid var(--frame);
+    padding: .6rem;
+    border-radius: .4rem;
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.thumb {
+    width: 72px;
+    height: 72px;
+    background: var(--gray);
+    border: 2px solid var(--frame);
+    border-radius: .3rem;
+    flex-shrink: 0;
+}
+
+.footer {
+    border-top: 2px solid var(--frame);
+    text-align: center;
+    padding: 1rem;
+}
